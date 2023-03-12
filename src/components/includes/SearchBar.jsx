@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Paper, IconButton } from "@mui/material";
 import { Search } from "@mui/icons-material";
-import styled from "styled-components";
 
 function SearchBar() {
     return (
@@ -17,14 +16,16 @@ function SearchBar() {
                 mr: { sm: 5 },
             }}
         >
-            <Input placeholder="Search..." onChange={() => {}} />
+            <input
+                placeholder="Search..."
+                onChange={() => {}}
+                style={{ width: "350px" }}
+            />
             <IconButton type="submit" sx={{ p: "10px", color: "red" }}>
                 <Search />
             </IconButton>
         </Paper>
     );
 }
-const Input = styled.input`
-    width: 350px;
-`;
+
 export default SearchBar;
