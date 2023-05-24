@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 // image
 import { logo } from "../../utils/constants";
 // components
-import SearchBar from "./SearchBar";
+import { SearchBar } from "../Index";
 function NavBar() {
     return (
         <Stack

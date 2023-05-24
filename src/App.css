@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* background-color: #000; */
+    background-color: #000;
     /* color: #fff; */
 }
 
@@ -33,6 +33,11 @@ img {
 input {
     border: none;
     outline: none;
+}
+@media screen and (max-width: 800px) {
+    .copyright {
+        display: none !important;
+    }
 }
 /* 
 .category-btn:hover {
@@ -74,11 +79,7 @@ input {
     }
 }
 
-@media screen and (max-width: 800px) {
-    .copyright {
-        display: none !important;
-    }
-}
+
 
 @media screen and (max-width: 600px) {
     .scroll-horizontal {
