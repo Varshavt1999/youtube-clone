@@ -3,9 +3,14 @@ import { Stack, Box } from "@mui/material";
 import VideoCard from "./VideoCard";
 import ChannelCard from "./ChannelCard";
 
-function Videos({ videos }) {
+function Videos({ videos, direction }) {
     return (
-        <Stack direction="row" flexWrap="wrap" justifyContent="center" gap={2}>
+        <Stack
+            direction={direction || "row"}
+            flexWrap="wrap"
+            justifyContent="center"
+            gap={2}
+        >
             {videos.map((item, i) => (
                 <Box key={i}>
                     {item.id.videoId && <VideoCard videoDetail={item} />}
