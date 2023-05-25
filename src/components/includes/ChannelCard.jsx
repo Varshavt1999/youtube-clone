@@ -4,7 +4,7 @@ import { Box, Card, CardContent, CardMedia, Typography } from "@mui/material";
 import { CheckCircle } from "@mui/icons-material";
 
 import { demoProfilePicture } from "../../utils/constants";
-function ChannelCard({ channelDetail }) {
+function ChannelCard({ channelDetail, marginTop }) {
     return (
         <Box
             sx={{
@@ -16,6 +16,8 @@ function ChannelCard({ channelDetail }) {
                 },
                 display: "grid",
                 placeItems: "center",
+                marginTop, //marginTop: marginTop,
+                height: "100%",
             }}
         >
             <Link to={`/channel/${channelDetail?.id?.channelId}`}>
@@ -24,6 +26,7 @@ function ChannelCard({ channelDetail }) {
                         display: "flex",
                         flexDirection: "column",
                         justifyContent: "center",
+                        alignItems: "center",
                         textAlign: "center",
                         color: "#fff",
                     }}
@@ -36,8 +39,8 @@ function ChannelCard({ channelDetail }) {
                         alt={channelDetail?.snippet?.title}
                         sx={{
                             borderRadius: "50%",
-                            width: "180px",
-                            height: "180px",
+                            width: "150px",
+                            height: "150px",
                             mb: 2,
                             border: "1px solid #e3e3e3",
                         }}

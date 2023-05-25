@@ -4,9 +4,8 @@ import VideoCard from "./VideoCard";
 import ChannelCard from "./ChannelCard";
 
 function Videos({ videos }) {
-    console.log(videos, "videos");
     return (
-        <Stack direction="row" flexWrap="wrap" justifyContent="start" gap={2}>
+        <Stack direction="row" flexWrap="wrap" justifyContent="center" gap={2}>
             {videos.map((item, i) => (
                 <Box key={i}>
                     {item.id.videoId && <VideoCard videoDetail={item} />}
