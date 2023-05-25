@@ -19,10 +19,7 @@ function NavBar() {
                 color: "#fff",
             }}
         >
-            <Link
-                to="/youtube-clone"
-                style={{ display: "flex", alignItems: "center" }}
-            >
+            <Link to="/" style={{ display: "flex", alignItems: "center" }}>
                 <img src={logo} alt="logo" height={45} />
             </Link>
             <SearchBar />
