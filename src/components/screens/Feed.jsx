@@ -6,6 +6,7 @@ function Feed() {
     const [selectedCategory, setSelectedCategory] = useState("New");
     const [videos, setVideos] = useState([]);
     useEffect(() => {
+        // search based on channel querry
         fetchFromApi(`search?part=snippet&q=${selectedCategory}`).then(
             (data) => {
                 console.log(data);
