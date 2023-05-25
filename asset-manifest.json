@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/youtube-clone%20/static/css/main.24a50da9.css",
+    "main.js": "/youtube-clone%20/static/js/main.c7e6ca5b.js",
+    "index.html": "/youtube-clone%20/index.html",
+    "main.24a50da9.css.map": "/youtube-clone%20/static/css/main.24a50da9.css.map",
+    "main.c7e6ca5b.js.map": "/youtube-clone%20/static/js/main.c7e6ca5b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.24a50da9.css",
+    "static/js/main.c7e6ca5b.js"
+  ]
+}
